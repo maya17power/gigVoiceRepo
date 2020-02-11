@@ -1,0 +1,61 @@
+
+.jumbotron{
+  padding-bottom: 0rem;
+  /* background-color: black !important; */
+}
+#gigVoice{
+  font-family: 'Pacifico', cursive;
+}
+#subTitle{
+  margin-top: 2rem;
+}
+/* #version {
+} */
+.columns{
+  padding-top:50px;
+  padding-bottom: 10px;
+
+}
+.subTitleAndVersion {
+    font-family: 'Gayathri', sans-serif;
+    font-size: 1.1rem;
+}
+#btnVersion{
+  font-family: 'Gayathri', sans-serif;
+  font-size: .9em;
+  color: black;
+  background-color: transparent;
+  border: none;
+}
+ul #status li{
+  display: inline;
+}
+#display li{
+  list-style-type: none;
+  font-size: .9em;
+  color: green;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 12px 12px 0px 12px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: .5px solid #ddd;
+  margin: 0px 0px;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 0px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #00FF41;
+}
