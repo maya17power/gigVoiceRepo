@@ -20,8 +20,8 @@
     <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
       <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
       <ul id="menu" class="list-group list-group-flush">
-        <a href="#wordSearch"><li class='list-group-item list-group-item-action'>Word Search</li></a>
-        <a href="#voiceDescriptors"><li class='list-group-item list-group-item-action'>Voice Descriptors</li></a>
+        <a href="#wordSearch"><li class='list-group-item list-group-item-action'>Voice Descriptor Search</li></a>
+        <a href="#voiceDescriptors"><li class='list-group-item list-group-item-action'>Voice Descriptor List</li></a>
         <a href="#equipmentCodes"><li class='list-group-item list-group-item-action'>Equipment Codes</li></a>
       </ul>
     </div>
@@ -39,7 +39,7 @@
               <button id="btnVersion" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Version 1.2</button>
 
                 <div class="col-xl-12 text-center columns">
-                  <h3>Voice Search</h3>
+                  <h4>Voice Descriptor Search</h4>
                   <p class="subTitleAndVersion">
                      <div class="input-group mb-3">
                         <input type="text" id="searchInput" class="form-control" placeholder="Second Floor Bedroom Window, etc." aria-label="searchInput" aria-describedby="btnGo">
@@ -113,7 +113,7 @@
             <div class="col-xl-12 text-center">
 
               <div class="col-xl-12 text-center columns" id="voiceDescriptors">
-                <h3>Voice Descriptors</h3>
+                <h4>Voice Descriptor List</h4>
                 <p></p>
                 <div class="container">
                   <ul class='pagination justify-content-center' id="alpha"></ul>
@@ -122,8 +122,38 @@
               </div>
 
               <div class="col-xl-12 text-center columns" id="equipmentCodes">
-                <h3>Equipment Codes</h3>
+                <h4>Question's & Equipment Codes</h4>
                 <p></p>
+                <div id="accordion">
+                  <!-- Start of first collaps option. -->
+                  <div class="card">
+                    <div class="card-header">
+                      <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        Question's Code
+                      </a>
+                    </div>
+                    <div id="collapseOne" class="collapse" data-parent="#accordion">
+                      <div class="card-body" id="qCodesList">
+
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of first collaps option. -->
+                  <!-- Start of second collaps option. -->
+                  <div class="card">
+                    <div class="card-header">
+                      <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                        Equipment Code
+                      </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                      <div class="card-body" id="eCodesList">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of second collaps option. -->
+                </div>
               </div>
 
             </div>
